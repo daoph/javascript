@@ -10,10 +10,32 @@
 	// alert (nbrInBootcamp);
 
 	/* a comment */            //OLD METHOD. Just continue to use new method //
-	console.log('count of bootcamp students',nbrInBootcamp);//shows your variable in the Developer console. Using the console log is a good way to see what's running in your program without looking at the code. It shows the work being processed.
-	console.log('count of instructors', nbrofInstructors)
+//shows your variable in the Developer console. Using the console log is a good way to see what's running in your program without looking at the code. It shows the work being processed.
+
 	//you declare a veriable using "var". you can also declare the variable just by listing the variable.
 
+
+//functions, name of the function, name them similar, open and closing parenthesis, and then open close curly braces. statements go in between
+function displayBootcampStudentAndInstructorCounts(cntOfStudents, cntOfInstructors) { 
+//the statements go here
+	console.log('count of bootcamp students',cntOfStudents);
+	console.log('count of instructors', cntOfInstructors);	
+	return cntOfStudents + cntOfInstructors;
+} //end of function definition
+
+
+var total = displayBootcampStudentAndInstructorCounts(nbrInBootcamp, nbrofInstructors);
+console.log("The total is", total);
+
+
+
+
+displayBootcampStudentAndInstructorCounts(nbrInBootcamp, nbrofInstructors); //you always always always need the ()
+
+nbrofInstructors = 1
+nbrInBootcamp = 4
+
+displayBootcampStudentAndInstructorCounts(nbrInBootcamp, nbrofInstructors);
 
 
 </script>
