@@ -15,7 +15,7 @@ body {font-size: 30pt;}
 
 
 function evaluat0 () {
-console.log("evaluat1 checking number")
+console.log("evaluat0 checking number")
 var nbr2 = document.getElementById('nbr');
 var nbr3 = nbr2.value;
 console.log("received value")
@@ -28,10 +28,11 @@ theAnswer.style.color = "red"
 theAnswer.style.fontStyle = "italic";
 theAnswer.style.fontSize = "1.5em"
 theAnswer.innerText = nbr3} 
+
 else { evaluat1() }
 
+//------------------------------------
 
-	
 function evaluat1 () {
 console.log("evaluat1 checking number")
 var nbr2 = document.getElementById('nbr');
@@ -46,9 +47,10 @@ theAnswer.style.color = "red"
 theAnswer.style.fontStyle = "normal";
 theAnswer.style.fontSize = "1.5em"
 theAnswer.innerText = nbr3} 
+
 else { evaluat2() }
 
-
+//------------------------------------
 
 function evaluat2 () {
 console.log("evaluat2 checking number")
@@ -64,9 +66,10 @@ theAnswer.style.color = "red"
 theAnswer.style.fontStyle = "italic";
 theAnswer.style.fontSize = "1em"
 theAnswer.innerText = nbr3} 
+
 else { evaluat3() }
 
-
+//------------------------------------
 
 function evaluat3 () {
 console.log("evaluat3 checking number")
@@ -82,15 +85,13 @@ theAnswer.style.color = "#000000"
 theAnswer.style.fontStyle = "italic";
 theAnswer.style.fontSize = "1.5em"
 theAnswer.innerText = nbr3} 
+
 else { evaluate1() }
 
-
-
-
-
-
+//------------------------------------
 
 function evaluate1 () {
+
 console.log("evaluate1 checking number")
 var nbr2 = document.getElementById('nbr');
 var nbr3 = nbr2.value;
@@ -104,8 +105,10 @@ theAnswer.style.color = "red"
 theAnswer.style.fontStyle = "normal";
 theAnswer.style.fontSize = "1em"
 theAnswer.innerText = nbr3} 
+
 else { evaluate2() }
 
+//------------------------------------
 
 function evaluate2() {
 
@@ -124,6 +127,8 @@ theAnswer.style.fontSize = "1em"
 theAnswer.innerText = nbr3} 
 else { evaluate3() }
 
+//------------------------------------
+
 function evaluate3() {
 
 console.log("evaluate2 checking number")
@@ -139,12 +144,14 @@ theAnswer.style.color = "#000000"
 theAnswer.style.fontStyle = "normal";
 theAnswer.style.fontSize = "1.5em"
 theAnswer.innerText = nbr3} 
+
 else {
 
 var theAnswer = document.getElementById('answer');
 console.log("didn't meet the evaluate3 parameters");
 theAnswer.style.color = "#000000"
 theAnswer.style.fontStyle = "normal";
+theAnswer.style.fontSize = "1em"
 theAnswer.innerText = nbr3;}
 
 }}}}}}}
