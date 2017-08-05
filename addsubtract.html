@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Javascript</title>
+
+<style>
+
+body {font-size: 5em;}
+
+
+	</style>
+
+
+<script lang='javascript'>
+
+
+
+function add(a) {
+
+	var number = document.getElementById('nbr');
+	var sum = Number(number.value) + Number(a);
+	var theAnswer = document.getElementById('nbr');
+		theAnswer.value = sum;
+
+
+}
+
+
+
+function subtract(b) {
+
+	var number = document.getElementById('nbr');
+	var sum = Number(number.value) + Number(b);
+	var theAnswer = document.getElementById('nbr');
+		theAnswer.value = sum;
+
+
+}
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+
+<button onclick='subtract(-1);''>-</button>
+
+<input id='nbr' type='text' value='0'>
+
+<button onclick='add(1);''>+</button>
+
+
+
+
+
+</body>
+</html>

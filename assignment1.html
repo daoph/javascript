@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Javascript</title>
+<script src='index.js'  type="text/javascript"></script>
+
+<script lang='javascript'>
+"use strict"; 
+
+// var a = 2; 
+// var b = 3;
+
+// function processalphabeta(alpha, beta) { 
+
+// 	console.log('alpha count', alpha);
+// 	console.log('beta count', beta);	
+// 	return [alpha**2] * [beta**2];
+
+// }
+
+// var total = processalphabeta(a, b);
+
+// console.log("For a =", a, ", for b =", b, ", value =", total);
+
+// a = 7
+// b = 13
+
+// var total = processalphabeta(a, b);
+
+// console.log("For a =", a, ", for b =", b, ", value =", total);
+
+// a = 27
+// b = 155
+
+// var total = processalphabeta(a, b);
+
+// console.log("For a =", a, ", for b =", b, ", value =", total);
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------
+
+// function processif(a, b) 
+// {
+// 	if (a%2 == 0) {var x = a**3} else {var x = a**2};
+// 	if (b%2 == 0) {var y = b**3} else {var y = b**2};
+// 	console.log("For a =", a, ", for b =", b, ", value =", x*y);   }
+
+// processif(2,3)
+// processif(7,13)
+// processif(27,155)
+// processif(56,3450)
+
+//----------------------------------------------------------------------------------------------------
+
+function displayInput() {
+	var inputCtrl = document.getElementById('thetext'); //You'll use this ALOT
+	var theValue  = inputCtrl.value;
+	var outputCtrl = document.getElementById('thetarget'); //You'll use this ALOT
+	outputCtrl.value = theValue;
+	console.log(theValue);
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+<label>This is a label</label>
+<input id='thetext' type="text">
+
+<button onclick='displayInput();''>Click Me!</button>
+
+<p></p>
+
+
+<input id='thetarget' type='text'>
+
+</body>
+</html>

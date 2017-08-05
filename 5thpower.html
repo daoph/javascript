@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Javascript</title>
+
+
+<script lang='javascript'>
+
+
+
+function raiseToFifthPower () {
+
+	var theNumber = document.getElementById('nbr');
+	var nbrRaised = theNumber.value ** 5;
+	var theAnswer = document.getElementById('answer');
+		theAnswer.innerText = nbrRaised;
+
+
+}
+
+
+</script>
+
+
+</head>
+<body>
+
+<label>Enter a number:</label>
+<input id='nbr' type='text' value='0'>
+
+<button onclick='raiseToFifthPower();''>Go</button>
+
+<label id='answer'></label>	
+
+
+</body>
+</html>
