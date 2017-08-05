@@ -12,6 +12,25 @@ body {font-size: 30pt;}
 <title>Homework 8-4</title>
 
 <script lang='javascript'>
+
+
+function evaluat0 () {
+console.log("evaluat1 checking number")
+var nbr2 = document.getElementById('nbr');
+var nbr3 = nbr2.value;
+console.log("received value")
+
+if (nbr3%2 ==0 && nbr3%7 == 0 && nbr3%3 == 0) {
+
+var theAnswer = document.getElementById('answer');
+console.log("looks to be divisible by 2, 3 and 7!");
+theAnswer.style.color = "red"
+theAnswer.style.fontStyle = "italic";
+theAnswer.style.fontSize = "1.5em"
+theAnswer.innerText = nbr3} 
+else { evaluat1() }
+
+
 	
 function evaluat1 () {
 console.log("evaluat1 checking number")
@@ -128,7 +147,7 @@ theAnswer.style.color = "#000000"
 theAnswer.style.fontStyle = "normal";
 theAnswer.innerText = nbr3;}
 
-}}}}}}
+}}}}}}}
 
 </script>	
 </head>
