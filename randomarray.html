@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang:"en">
+
+
+<head><title>Random Array</title>
+<style> *{text-align: center; font-size: 30pt}
+</style>
+<script lang='javascript'>
+	var arr = []; // don't do this! global stuff
+	function makeArray()
+{	
+
+	var arr = [];
+	var outputA = document.getElementById('displayArray')
+		for(idx=0; idx<10; idx++){
+	
+	var rndm = Math.floor(Math.random()*11)
+		arr.push(rndm)
+		outputA.textContent = arr
+                                 }
+}
+	function sumArray()
+{
+	var outputB = document.getElementById('arrTOT')
+	var sum = 0
+		for(idx=0; idx<arr.length; idx++)
+	{  
+		sum += arr[idx]
+		outputB.value = sum
+	}
+}                       
+	function averageArray()
+{
+	var outputC = document.getElementById('arrAVG')
+	var sum2 = 0
+
+	for(idx=0; idx<arr.length; idx++)
+
+	{  
+		sum2 += arr[idx]
+	var sum3 = sum2/arr.length
+		outputC.value = sum3
+	}
+}
+	function doitall(){
+		makeArray();
+			sumArray();
+				averageArray();
+}
+
+</script>	
+</head
+<body>
+
+<button id=goButton onclick="doitall()">GO</button>
+<p id=displayArray></p>
+<input id=arrTOT type="text" name="Array Total" placeholder="Array Total">
+<input id=arrAVG type="text" name="Array Average" placeholder="Array Average">
+
+
+</body>
+
+
+</html>	

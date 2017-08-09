@@ -4,7 +4,7 @@
 
 <style>
 
-body {font-size: 5em;}
+body {font-size: 30pt;}
 
 
 	</style>
@@ -18,23 +18,38 @@ function add(a) {
 
 	var number = document.getElementById('nbr');
 	var sum = Number(number.value) + Number(a);
-	var theAnswer = document.getElementById('nbr');
-		theAnswer.value = sum;
+	number.value = sum
+
+if (sum%2 == 0) {sum.style.color = "red"} else {sum.style.color = "black"}
+
+if (sum%3 == 0) {sum.style.fontStyle = "italic" } else {sum.style.fontStyle = "normal" }
+
+if (sum%7 == 0) {sum.style.fontSize = "1em" } else {sum.style.fontSize = "1.5em" }
+
+	
+number.value = sum
 
 
 }
-
 
 
 function subtract(b) {
 
 	var number = document.getElementById('nbr');
 	var sum = Number(number.value) + Number(b);
-	var theAnswer = document.getElementById('nbr');
-		theAnswer.value = sum;
+	console.log(checking)
+	
+if (sum%2 == 0) {sum.style.color = "red"} else {sum.style.color = "black"}
+
+if (sum%3 == 0) {sum.style.fontStyle = "italic" } else {sum.style.fontStyle = "normal" }
+
+if (sum%7 == 0) {sum.style.fontSize = "1em" } else {sum.style.fontSize = "1.5em" }
+
+number.value = sum
 
 
 }
+
 
 
 </script>
@@ -46,11 +61,11 @@ function subtract(b) {
 
 
 
-<button onclick='subtract(-1);''>-</button>
+<button style="font-size: 30pt" onclick='subtract(-1);''>-</button>
 
-<input id='nbr' type='text' value='0'>
+<input id='nbr' style="font-size: 30pt" type='text' value='0'>
 
-<button onclick='add(1);''>+</button>
+<button style="font-size: 30pt" onclick='add(1) ;''>+</button>
 
 
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Javascript</title>
+<style>
+body {font-size: 30pt;}
+
+</style>
+
+
+<script lang='javascript'>
+
+
+
+function add1() {
+
+	var number = document.getElementById('nbr');
+	var sum = Number(number.value) + 1;
+	number.value = sum
+}
+function subtract1() {
+
+	var number = document.getElementById('nbr');
+	var sum = Number(number.value) -1 ;
+	number.value = sum
+}
+function activate(){
+
+	var nbrV = document.getElementById('nbr');
+	
+	while ( Number(nbrV.value)%11 == 0 || Number(nbrV.value)%13 == 0 || ) {add1()};
+
+
+}
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+
+<button style="font-size: 30pt" onclick='subtract1();''>-</button>
+
+<input id='nbr' style="font-size: 30pt" type='text' value='0'>
+
+<button style="font-size: 30pt" onclick='add1() ;''>+</button><br/>
+
+<button style="font-size: 40pt" onclick='activate();''>Activate Counter</button>
+
+
+
+
+
+</body>
+</html>

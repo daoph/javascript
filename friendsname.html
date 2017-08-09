@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Friends Names</title>
+
+
+
+<script lang='javascript'>
+
+var pals = ['Peter','John N', 'John T', 'Thai',	'Vy','Lyna','Camie', 'Joey'];
+	
+	function fwends() 
+
+	{
+		var pal = document.getElementById('friendslist')
+
+	var comma = ' '
+		for (var idx=0; idx<pals.length; idx++) {
+
+	         
+
+	 	         var pal2 = pals[idx]
+
+		pal.textContent += comma + pal2
+
+			var comma = ','          }
+	}
+
+	
+	
+</script>
+
+
+</head>
+<body>
+
+
+<button style="font-size: 30pt" onclick="fwends()">Go</button><br/>
+<p id="friendslist"></p>
+
+
+</body>
+</html>

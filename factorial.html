@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Javascript</title>
+
+
+<script lang='javascript'>
+
+
+
+function factoria1 () {
+
+	var inputCtrl = document.getElementById('nbr');
+	var theAnswer = document.getElementById('answer');
+	var nbrFact = Number(inputCtrl.value);
+
+var theAnswer = 1;
+
+for (var idx = 2; idx<= nbrFact; idx++) 
+
+	{  theAnswer = theAnswer*idx;
+
+answer.value = theAnswer;
+
+}
+
+
+
+
+
+
+}
+
+
+</script>
+
+
+</head>
+<body>
+
+<label style = "font-size: 30pt">Enter a number:</label>
+<input style = "font-size: 30pt" id='nbr' type='text' value='0'>
+
+<button style = "font-size: 30pt"; onclick='factoria1();''>Go</button>
+
+<input id='answer' style = "font-size: 30pt" value = '0'>
+
+
+</body>
+</html>

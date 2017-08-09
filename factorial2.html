@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Sum from 0 to X</title>
+
+
+<script lang='javascript'>
+	function accum1 () {
+		var inputCtrl = document.getElementById('nbr');
+		var x = document.getElementById('answer');
+		var z = Number(inputCtrl.value);
+
+		var x = 0;
+		for (var idx = 0; idx<= z; idx++) 
+		{  x = x+idx;
+			answer.value = x;
+    }
+	}
+</script>
+
+
+</head>
+<body>
+
+<label style = "font-size: 30pt">Enter a number:</label>
+<input style = "font-size: 30pt" id='nbr' type='text' value='0'>
+<button style = "font-size: 30pt"; onclick='accum1();''>Calcuate</button>
+<input id='answer' style = "font-size: 30pt" >
+
+
+</body>
+</html>

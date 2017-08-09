@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang:"en">
+
+
+<head><title>Fibonacci</title>
+<style> *{text-align: center; font-size: 30pt}
+</style>
+<script lang='javascript'>
+"use strict";	
+function FibSeq () {
+	var arr = [1,2];
+	var outputF = document.getElementById('sequenceF');
+
+	for(var idx=0; idx<10; idx++){
+		var nbr = arr[arr.length-1] + arr[arr.length-2];
+		arr.push(nbr);
+    }
+	outputF.textContent = arr;
+}
+
+</script>	
+ </head>
+		<body onload = "FibSeq();">
+			<p id=sequenceF></p>
+ </body>
+</html>	

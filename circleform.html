@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang:"en">
+<head> <title>Area of a Circle</title>
+
+
+<script lang='javascript'>
+	function calcarea () {
+		var inputCtrl = document.getElementById('nbr');
+		var x = document.getElementById('answer');
+		var r = Number(inputCtrl.value);
+		var pi = 3.1415926535897932384
+		
+		var x = r*r*pi
+	
+	{  		x = x;
+			answer.innerText = x; }
+	}
+
+
+
+</script>
+
+
+</head>
+<body>
+
+<label style = "font-size: 30pt">Enter radius</label>
+<input style = "font-size: 30pt" id='nbr' type='text' value='0'>
+<button style = "font-size: 30pt"; onclick='calcarea();''>Calcuate</button>
+<label id='answer' style = "font-size: 30pt" > </label>	
+
+
+</body>
+</html>
