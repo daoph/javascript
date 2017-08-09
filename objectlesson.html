@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang:"en">
+
+
+<head>
+<style>
+</style>
+<title>Objects Lesson</title>
+
+<script lang='javascript'>
+"use strict";
+	var students = [];
+	function ready(){
+		var oKim = {Id:0, Name: 'Kim'};
+		var oLong = {Id:1, Name: 'Long'};
+		var oElisha = {Id:2, Name: 'Elisha'};
+		var oEric = {Id:3, Name: 'Eric'};
+		var oPhuc = {Id:4, Name: 'Phuc'};
+		students = [oKim, oLong, oElisha, oEric, oPhuc];
+		
+
+		var ulCtrl = document.getElementById('students');
+		for(var idx = 0; idx < students.length; idx++){
+			var name = students[idx].Name
+			var liTag = '<li>'+ name + '</li>';
+			ulCtrl.innterHTML += liTag;
+		}
+
+
+
+
+		
+
+	}
+
+
+		
+
+
+
+
+</script>	
+</head>
+<body onload="ready()">
+	<ul id="students">
+	</ul>
+	
+</body>
+
+
+</html>	
